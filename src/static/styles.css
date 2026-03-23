@@ -74,6 +74,77 @@ section h3 {
   margin-bottom: 8px;
 }
 
+.participants-section {
+  margin-top: 12px;
+  padding: 10px 12px;
+  background: linear-gradient(180deg, #ffffff 0%, #eef4ff 100%);
+  border: 1px solid #d7e3ff;
+  border-radius: 8px;
+}
+
+.participants-title {
+  margin-bottom: 6px;
+  color: #16346d;
+}
+
+.participants-list {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.participants-list li {
+  margin-bottom: 4px;
+  color: #2b3c5f;
+}
+
+.participant-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 4px 0;
+}
+
+.participant-name {
+  font-weight: 600;
+}
+
+.participant-delete-btn {
+  border: 1px solid #d2dcf5;
+  background-color: #fff;
+  color: #9f1d2c;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  padding: 0;
+  cursor: pointer;
+  line-height: 1;
+  transition: transform 0.15s ease, background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.participant-delete-btn:hover {
+  background-color: #ffe7ea;
+  border-color: #f2a0ab;
+  transform: scale(1.05);
+}
+
+.participant-delete-btn:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.participants-list li:last-child {
+  margin-bottom: 0;
+}
+
+.empty-participants {
+  margin-left: 0;
+  color: #6b7aa0;
+  font-style: italic;
+}
+
 .form-group {
   margin-bottom: 15px;
 }
